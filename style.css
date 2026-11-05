@@ -1,0 +1,110 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Utility class to hide screens */
+.hidden {
+    display: none !important;
+}
+
+.menu-buttons, .setup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"] {
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 80%;
+    text-align: center;
+    letter-spacing: 2px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #4a90e2;
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+.secondary-btn {
+    background-color: #6c757d;
+}
+.secondary-btn:hover {
+    background-color: #5a6268;
+}
+
+.mistakes-container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem; /* Adjust size of the emoji icons */
+}
+
+.pi-icon {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* When a mistake is made, the icon fades and shrinks */
+.pi-icon.lost {
+    opacity: 0.2;
+    transform: scale(0.7);
+    filter: grayscale(100%);
+}
+
+#menu-screen {
+    text-align: left; /* Aligns all text inside the menu to the left */
+}
+
+/* Optional: If you want the title and buttons to stay centered while the paragraphs are left-aligned */
+#menu-screen h1, 
+#menu-screen .menu-buttons {
+    text-align: center;
+}
